@@ -14,7 +14,7 @@ if (nombre.length > 0 && isNaN(nombre) ){
     let faltante =  18 - edad
 
     if (!isNaN(edad)) {
-        console.log( "es un numero ")
+        console.log('es un numero')
 
         if ( edad >= 18 ) {
         
@@ -29,7 +29,7 @@ if (nombre.length > 0 && isNaN(nombre) ){
 
 
     } else {
-        console.log( "no es un numero ")
+        console.log('no es un numero')
         alert('Debes ingresar un numero')
     }
 
