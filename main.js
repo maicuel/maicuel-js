@@ -1,8 +1,14 @@
 console.log('estamos conectados :)')
 
 
-let edad = prompt('Ingresa tu edad')
+let edad = parseInt(prompt('Ingresa tu edad'))
+console.log(edad)
+
 let faltante =  18 - edad
+
+if ( edad == !isNaN ){
+    alert('Debes ingresar un numero')
+}
 
 if ( edad >= 18 ) {
     
