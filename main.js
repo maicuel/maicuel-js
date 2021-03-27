@@ -2,6 +2,7 @@ console.log('estamos conectados :)')
 
 
 function ingresarEdad() {
+    
    let edad = document.getElementById("inputEdad").value;
    console.log(edad)
 
