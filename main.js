@@ -1,18 +1,31 @@
 console.log('estamos conectados :)')
 
 
-let edad = prompt('Ingresa tu edad')
+let edad = parseInt(prompt('Ingresa tu edad'))
+
+console.log(edad)
+
 let faltante =  18 - edad
 
-if ( edad >= 18 ) {
-    
-    let nombre = prompt('Ingresa tu nombre')
-    alert('Bienvenido ' + nombre )
-    console.log('cumple requisitos')
+if (!isNaN(edad)) {
+    console.log( "es un numero ")
 
-} else {
 
-    alert('Lo siento no tienes edad suficiente para ver este contenido te faltan: ' + faltante + ' años' )
-    console.error('No cumple requisitos')
+    if ( edad >= 18 ) {
+        
+        let nombre = prompt('Ingresa tu nombre')
+        alert('Bienvenido ' + nombre )
+        console.log('cumple requisitos')
+
+    } else {
+
+        alert('Lo siento no tienes edad suficiente para ver este contenido te faltan: ' + faltante + ' años' )
+        console.error('No cumple requisitos')
+    }
+
+
+  } else {
+    console.log( "no es un numero ")
+    alert('Debes ingresar un numero')
 }
 
